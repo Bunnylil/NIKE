@@ -730,3 +730,62 @@ header h1 {
       margin-bottom: 30px;
   }
 }
+
+.container2 {
+  max-width: 1440px;
+  margin: 0 auto;
+  position: relative;
+  margin-top: 50px;
+  padding: 0 20px;
+}
+
+/* Hero section styles */
+.hero-section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  height: 80vh;
+  overflow: hidden;
+  background-color: #f8f8f8; /* Added subtle background color */
+}
+
+.hero-video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0.95; /* Slight transparency for better aesthetics */
+}
+
+/* Responsive styles */
+@media (max-width: 1024px) {
+  .hero-section {
+    flex-direction: column;
+    height: auto;
+    padding: 40px 0;
+  }
+
+  .hero-image-container {
+    height: 60vh;
+  }
+}
+
+@media (max-width: 768px) {
+  .hero-section {
+    height: auto;
+    padding: 20px 0;
+  }
+
+  .hero-image-container {
+    height: 50vh;
+  }
+
+  .hero-video {
+    opacity: 1; /* Ensure full visibility on smaller screens */
+  }
+}
+
+
