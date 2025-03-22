@@ -1,99 +1,138 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>3LEGENT</title>
-  <link rel="stylesheet" href="styles.css" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-</head>
-<body>
-  <div class="container">
-    <div class="form-section">
-      <h1>Sign Up</h1>
-      <p class="subtitle">Already have an account?<a href="signin.html">Sign in</a></p>
-      
-      <form>
-        <div class="form-group">
-          <div class="form-row">
-            <div class="form-col">
-              <label for="firstName">First name</label>
-              <input type="text" id="firstName" placeholder="Enter first name" required>
-            </div>
-            <div class="form-col">
-              <label for="lastName">Last name</label>
-              <input type="text" id="lastName" placeholder="Enter last name" required>
-            </div>
-          </div>
-        </div>
-        
-        <div class="form-group">
-          <label for="email">Email</label>
-          <input type="email" id="email" placeholder="Enter email address" required>
-        </div>
-        
-        <div class="form-group">
-          <label for="phone">Phone</label>
-          <div class="phone-input">
-            <select id="countryCode">
-              <option value="254">+254</option>
-              <option value="255">+255</option>
-              <option value="256">+256</option>
-            </select>
-            <input type="tel" id="phone" placeholder="Enter phone number" required>
-          </div>
-        </div>
-        
-        <div class="form-group">
-          <label for="password">Password</label>
-          <div class="password-container">
-            <input type="password" id="password" placeholder="Enter password" required>
-            <i class="fas fa-eye-slash toggle-password" onclick="togglePassword()"></i>
-          </div>
-          <div class="password-strength">
-            <div class="strength-dot"></div>
-            <div class="strength-dot"></div>
-            <div class="strength-dot"></div>
-            <div class="strength-dot"></div>
-          </div>      
-        </div>
-        
-        <div class="checkbox-group">
-          <input type="checkbox" id="terms" required>
-          <label for="terms">I agree with <a href="#">Terms and Conditions</a></label>
-        </div>
-        
-        <button type="submit" id="signup-btn">Sign up</button>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="3legant - Your destination for top-tier diverse brands worldwide."
+    />
+    <title>3legant</title>
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="home.css" />
+  </head>
 
-        
-        <div class="divider">or sign up with</div>
-        
-        <div class="social-buttons">
-          <button id="google-signin" class="social-button" type="button">
-            <i class="fab fa-google"></i>
-          </button>
-        
-          <button id="twitter-signin" class="social-button" type="button">
-            <i class="fab fa-twitter"></i>
-          </button>
-        
-          <button id="facebook-signin" class="social-button" type="button">
-            <i class="fab fa-facebook-f"></i>
-          </button>
-        </div>
-        
-      </form>
+  <body>
+    <!-- Promo Banner -->
+    <div class="top-bar">
+      <div class="promo">
+        <i class="fa-solid fa-ticket"></i>
+        <span>30% off first Sign Up — Limited time!</span>
+        <a href="signup.html" class="shop-link" aria-label="Sign Up"
+          >Sign up →</a
+        >
+      </div>
     </div>
+
+        <!-- Navbar Section -->
+        <header class="navbar">
+          <div class="logo">
+            <a href="index.html" aria-label="Go to home page">
+              <img src="images/3legant..png" alt="3legant Logo" />
+            </a>
+          </div>
+          <nav class="nav-links">
+            <ul>
+              <li><a href="#" aria-label="Home">Home</a></li>
     
-    <div class="banner-section"></div>
+              <!-- Shop with Dropdown -->
+              <li class="dropdown">
+                <a href="#" class="dropdown-toggle" aria-label="Men">
+                  Men <i class="fas fa-caret-down"></i>
+                </a>
+                <div class="dropdown-menu">
+                  <a href="T-Shirts.html">T-Shirts</a>
+                  <a href="Hoodies.html">Hoodies</a>
+                  <a href="Joggers.html">Joggers</a>
+                  <a href="Sneakers.html">Sneakers</a>
+                  <a href="Jeans.html">Jeans</a>
+                </div>
+              </li>
+              <li class="dropdown">
+                <a href="#" class="dropdown-toggle" aria-label="Women">
+                  Women <i class="fas fa-caret-down"></i>
+                </a>
+                <div class="dropdown-menu">
+                  <a href="T-Shirts.html">T-Shirts</a>
+                  <a href="Hoodies.html">Hoodies</a>
+                  <a href="Joggers.html">Joggers</a>
+                  <a href="Sneakers.html">Sneakers</a>
+                  <a href="Jeans.html">Jeans</a>
+                </div>
+                <li class="dropdown">
+                  <a href="#" class="dropdown-toggle" aria-label="Kids">
+                    Kids <i class="fas fa-caret-down"></i>
+                  </a>
+                  <div class="dropdown-menu">
+                    <a href="T-Shirts.html">T-Shirts</a>
+                    <a href="Hoodies.html">Hoodies</a>
+                    <a href="Joggers.html">Joggers</a>
+                    <a href="Sneakers.html">Sneakers</a>
+                    <a href="Jeans.html">Jeans</a>
+                    
+                  </div>
+                  <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" aria-label="Brands">
+                      Brands <i class="fas fa-caret-down"></i>
+                    </a>
+                    <div class="dropdown-menu">
+                      <a href="Nike.html">Nike</a>
+                      <a href="Adidas.html">Adidas</a>
+                      <a href="Puma.html">Puma</a>
+                      <a href="UnderArmour.html">Under Armour</a>
+                      <a href="NewBalance.html">New Balance</a>
+                      
+                 
+                    </div>
+              <li><a href="#" aria-label="About Us">About Us</a></li>
+              <li><a href="#" aria-label="Contact Us">Contact Us</a></li>
+            </ul>
+          </nav>
     
-  </div>
+          <div class="nav-icons">
+            <!-- User Profile with Dropdown -->
+            <div class="dropdown">
+              <a
+                href="signup.html"
+                aria-label="User Profile"
+                class="dropdown-toggle"
+              >
+                <i class="fas fa-user"></i> <i class="fas fa-caret-down"></i>
+              </a>
+              <div class="dropdown-menu">
+                <a href="signup.html"><i class="fas fa-user-plus"></i> Sign Up</a>
+                <a href="signin.html"
+                  ><i class="fas fa-sign-in-alt"></i> Sign In</a
+                >
+              </div>
+            </div>
+    
+            <a href="checkout.html" aria-label="Favorites">
+              <i class="fas fa-heart"></i>
+            </a>
+            <a href="cart.html" id="cart-icon" aria-label="Shopping Cart">
+              <i class="fas fa-shopping-cart"></i>
+            </a>
+            <div class="hamburger" aria-label="Toggle Menu">
+              <i class="fas fa-bars"></i>
+              <div class="hamburger-menu">
+                <a href="#" aria-label="Home">Home</a>
+                <a href="#" aria-label="Men">Men</a>
+                <a href="#" aria-label="Women">Women</a>
+                <a href="#" aria-label="Kids">Kids</a>
+                <a href="#" aria-label="Brands">Brands</a>
+                <a href="#" aria-label="About Us">About Us</a>
+                <a href="contact.html" aria-label="Contact Us">Contact Us</a>
+                <a href="signup.html" aria-label="Sign Up">Sign Up</a>
+                <a href="signin.html" aria-label="Sign In">Sign In</a>
+              </div>
+            </div>
+          </div>
+        </header>
 
-  <script type="module" src="script.js"></script>
-
-
-  
-
-  
+    <script src="home.js" defer></script>
 </body>
 </html>
