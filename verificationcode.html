@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>3LEGENT - Reset Password</title>
+  <link rel="stylesheet" href="verificationcode.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+  <div class="container">
+    <div class="form-section">
+      <h1>Enter Code Sent</h1>
+      <p class="subtitle">Experiencing issues receiving the code? <a href="verificationcode.html" id="resend-code">Resend code</a></p> 
+      
+      <form id="reset-form">
+        <div class="code-inputs">
+          <input type="text" class="code-input" maxlength="1" required>
+          <input type="text" class="code-input" maxlength="1" required>
+          <input type="text" class="code-input" maxlength="1" required>
+          <input type="text" class="code-input" maxlength="1" required>
+        </div>
+        
+        <button type="submit" id="reset-btn">Submit</button>
+      </form>
+    </div>
+    
+    <div class="banner-section"></div>
+  </div>
+
+  <script type="module" src="verificationcode.js"></script>
+</body>
+</html>

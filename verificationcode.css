@@ -1,0 +1,125 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #ffffff;
+}
+
+.container {
+  display: flex;
+  width: 100%;
+  max-width: 900px;
+  height: 670px;
+  background-color: white;
+  overflow: hidden;
+}
+
+.form-section {
+  width: 50%;
+  padding: 40px;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.banner-section {
+  width: 50%;
+  background-image: url('https://i.pinimg.com/736x/41/47/6d/41476dc49372d5e910c7d417ce544e95.jpg');
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+h1 {
+  font-size: 26px;
+  font-weight: bold;
+  margin-bottom: 12px;
+  color: #333;
+}
+
+.subtitle {
+  font-size: 14px;
+  color: #666;
+  margin-bottom: 20px;
+}
+
+.subtitle a {
+  color: #ff8c00;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.code-inputs {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 24px;
+}
+
+.code-input {
+  width: 60px;
+  height: 60px;
+  border: 2px solid #ddd;
+  border-radius: 8px;
+  font-size: 28px;
+  text-align: center;
+  font-weight: bold;
+  outline: none;
+  transition: border-color 0.3s;
+}
+
+.code-input:focus {
+  border-color: #ff8c00;
+}
+
+button {
+  width: 100%;
+  padding: 12px;
+  background-color: black;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #333;
+}
+
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+    max-width: 100%;
+  }
+  
+  .form-section {
+    width: 100%;
+    padding: 30px;
+  }
+  
+  .banner-section {
+    display: none;
+  }
+  
+  .code-input {
+    width: 50px;
+    height: 50px;
+    font-size: 24px;
+  }
+}
